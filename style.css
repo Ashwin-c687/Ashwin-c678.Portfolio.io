@@ -1,0 +1,95 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+  --primary: #007afd;
+  --card-bg: #fff;
+}                                                               
+
+body.dark-mode {
+  --bg: #121212;
+  --text: #f0f0f0;
+  --primary: #0763ec;
+  --card-bg: #1f1f1f;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 6px 12px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes it a circle */
+  object-fit: cover;
+  object-position: top center; 
+  display: block;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+body.dark-mode #theme-toggle {
+  background: #333;
+  color: #fff;
+}
+
+nav {
+  background: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+body.dark-mode nav {
+  background: #2a2a2a;
+}
+
+nav a {
+  margin: 0 15px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+}
